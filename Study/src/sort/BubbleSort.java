@@ -15,7 +15,7 @@ public class BubbleSort {
 					int temp = array.get(j);
 					array.set(j, array.get(j + 1));
 					array.set(j + 1, temp);
-
+					System.out.println("hey from MyEclipse");
 					needNextPass = true;
 				}
 			}
