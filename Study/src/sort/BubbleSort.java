@@ -19,6 +19,7 @@ public class BubbleSort {
 				}
 			}
 		}
+		System.out.println("hey from home");
 		System.out.println(array);
 	}
 
