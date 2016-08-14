@@ -2,7 +2,7 @@ package clone;
 
 import java.io.Serializable;
 
-public class Person implements Serializable{
+public class Person implements Serializable, Cloneable{
 
 	private static final long serialVersionUID = 2995662919016760179L;
 	
@@ -40,8 +40,13 @@ public class Person implements Serializable{
 		this.car = car;
 	}
 
+//	@Override
+//	public String toString() {
+//		return "Person [name=" + name + ", age=" + age + ", car=" + car + "]";
+//	}
+	
 	@Override
-	public String toString() {
-		return "Person [name=" + name + ", age=" + age + ", car=" + car + "]";
+	public Object clone() throws CloneNotSupportedException {
+		return super.clone();
 	}
 }
